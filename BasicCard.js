@@ -1,4 +1,4 @@
-//console.log("I've loaded successfully");
+console.log("I've loaded successfully");
 //var inquirer =  require('inquirer');
 //questions and answers for the flashcards need to be in a constructor
 
@@ -20,4 +20,5 @@ var fifthQuestion = new BasicCard("What was the fight between the Lancaster and 
 console.log(fifthQuestion);
 var sixthQuestion = new BasicCard("What was the name of the Native American city that existed in current day St. Louis?", "Cahokia");
 console.log(sixthQuestion);
+
 module.exports = BasicCard;
