@@ -1,1 +1,3 @@
-//var inquirer =  require('inquirer')
+var inquirer =  require('inquirer');
+var flashCards = require('./BasicCard.js');
+//console.log(flashCards);
