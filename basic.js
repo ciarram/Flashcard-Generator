@@ -1,6 +1,6 @@
 console.log("I've loaded successfully");
 var cardData = require('./basic.json');
-var fs = require('fs');
+//var fs = require('fs');
 //var inquirer =  require('inquirer');
 //questions and answers for the flashcards need to be in a constructor
 
@@ -9,10 +9,11 @@ var fs = require('fs');
 for(var i = 0; i < (cardData.length); i++){
     function basicCard(front,back){
         this.front = cardData[i].front;
+        console.log(this.front);
         this.back = cardData[i].back;
     }
     var question = new basicCard();
-    //console.log(question);
+    //console.log(question.front);
 }
 
 module.exports = basicCard;
