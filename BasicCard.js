@@ -9,7 +9,7 @@ var count = 0;
 
 function questions() {
     if (count < cardData.length) {
-        var chosenCard = new basicCard(cardData[count].front, cardData[count].back);
+        var chosenCard = new basicCard(cardData[0].front, cardData[0].back);
         // console.log(chosenCard);				
         // playedCard = chosenCard(cardData[count], cardData[count]);
         inquirer.prompt([
@@ -21,11 +21,11 @@ function questions() {
             if (answer.question === cardData[count].back) {
                 console.log("You are correct.");
                 count++;
-                basicQuestions();
+                questions();
             } else {
                 console.log("Sorry, not right")
                 count++;
-                basicQuestions();
+                questions();
             }
         });
     }
